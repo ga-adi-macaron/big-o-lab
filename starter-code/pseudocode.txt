@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: It loops through the array once.
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^2)
+Explanation: As it runs through the array of arrays, it calls another method that runs through the array at the first array's index. So it's practically a nested for loop.
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: O(log n)
+Explanation: As the integer increases at a constant amount, the amount of times it runs through the loop is less than that constant amount. If you keep doubling the integer, each time it will only add one extra step. Hard to explain haha.
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: It only runs through the loop once.
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,5 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^3)
+Explanation: The first for loop runs n times. Then inside, another for loop runs n times. Add to it a for loop that runs twice as many as n times. But inside that one is a while loop that runs 1.5 times n times. So it would be n * (n + ((2 * n) * (1.5 * n))) which simplifies to n(n+(2n*1.5n))) which simplifies to n(n+(3n^2)) which we then drop the n+ and the 3* because it's not as important as the squares. So n(n^2) which is n^3.
