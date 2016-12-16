@@ -7,8 +7,9 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
+Running time: O(n)
 Explanation: 
+Max Runtime can be no more than the number of elements.
 
 ----------------------------------------------------------------
 
@@ -21,9 +22,9 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
+Running time: O(n*n) = O(n^2)
 Explanation: 
-
+Max runtime is the number of arrays passed multiplied by the number of elements in each array which is occuring in method from problem 1.
 ----------------------------------------------------------------
 
 Problem 3:
@@ -37,8 +38,9 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
+Running time: O(log n)
 Explanation: 
+Each iteration reduces the size of n by half, so it will take as long as how many times the value can be halved.
 
 ----------------------------------------------------------------
 
@@ -52,8 +54,9 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
+Running time: O(1+n) = O(n)
 Explanation: 
+The max value is retrieved at a constant rate, then we iterate through the entire array which takes linear time. We can simplify this to linear time.
 
 ----------------------------------------------------------------
 
@@ -73,5 +76,6 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
+Running time: O(n *(2n+n) * 3n/2) = O(n*2n*n) = O(n*n*n) = O(n^3)=O(n^c)
 Explanation: 
+The outter-most for-loop runs in linear time, the two inner for-loops each run in linear time (comes out to 2n), the second of the inner for-loops contains a while-loop that runs in 1.5x linear time. Collapsing them onto themselves shows that this runs in n^c where c is the level of nested loops.
