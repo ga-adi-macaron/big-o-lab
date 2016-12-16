@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: This a linear complexity. There is one loop through the data so the worst case would be to have to go through every element of the array.
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^2)
+Explanation: There is a nested loop here. For each element in the array or arrays, we iterate over arrays themselve.
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: O(log n)
+Explanation: The distance from n to 1 is halved with each iteration. As opposed to walking down to one in a linear fashion.
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: Given an array, loop through the array once. As n grows, the time it takes to loop through the arrays grows proportionally.
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,5 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n(n+2n(3/2n))) = O(n^3 + n^2) = O(n^3)
+Explanation: The loops in this method run three teirs deep. The worst case-simplified version would be n^3.
