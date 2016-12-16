@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: Big O(n)
+Explanation: It’s a linear operation that loops through an array and adds each number in the array to each other which depends on the length of the input
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: Big O(n^2)
+Explanation: The func has a for loop and calls func sumArray which also has a for loop, therefore operating within a nested for loop
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: Big O(n)
+Explanation: It’s linear operation that takes in an int and returns how much how many times it is divisible by 2 while the number being divided next is greater than or equal to 1 which depends on how large or small of a number the input is
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: Big O(n)
+Explanation: It’s a linear operation that loops through an array to find the max value starting at index 0 which depends on the length of the input
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,5 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: Big O(n + n^2) = Big O(n^2)
+Explanation: The func has multiple nested loops and is dependent on how large or small of a number the input is for the last while loop
