@@ -7,9 +7,9 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
+Running time: O(n)
 Explanation: 
-
+function runs a single for loop that runs through the array once
 ----------------------------------------------------------------
 
 Problem 2:
@@ -21,9 +21,9 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
+Running time: O(n^2)
 Explanation: 
-
+runs first for loop and then uses the for loop for problem 1 to make it n^2
 ----------------------------------------------------------------
 
 Problem 3:
@@ -37,9 +37,9 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
+Running time: O(log n)
 Explanation: 
-
+each time it runs through the loop it reduces n by 2 before running again
 ----------------------------------------------------------------
 
 Problem 4:
@@ -52,9 +52,9 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
+Running time: O(n)
 Explanation: 
-
+runs through the array once 
 ----------------------------------------------------------------
 
 ***BONUS*** Problem 5:
@@ -73,5 +73,13 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
+Running time: O(n^3)
 Explanation: 
+--so starting at the bottom...while loop runs O(3/2n) == O(n)
+--then the for loop with k (on its own) is O(2n)==O(n)
+--the while loop is inside the k for loop so they are multiplied O(n) * O(n) == O(n*n) == O(n^2)
+--the for loop with the j is O(n) 
+--add the 2 for loop times together O(n) + O(n^2) == O(n+n^2) == O(n^2)
+--and finally they are all nested witin the for loop with the i (on its own is O(n))
+--O(n) * O(n^2) == O(n*n^2) == O(n^3)
+will add picture for refference of my thought process 
