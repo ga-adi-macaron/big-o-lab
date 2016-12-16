@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: There is a single not-nested loop. It is a linear time operation.
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^2)
+Explanation: Although it seems like a single not-nested loop; it will actually go through the inside of the matrix just like another loop; hence it is a quadratic time operation.
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: O(log(n))
+Explanation: The operation continues to divide the int parameter by 2 until it reaches 1; so it is a logarithmic time operation.
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: O(1)
+Explanation: The operation just looks for a single index and returns the value of the index directly; so the operation time will be constant all the time.
 
 ----------------------------------------------------------------
 
