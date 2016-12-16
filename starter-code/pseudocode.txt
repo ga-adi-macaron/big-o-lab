@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: Because it is running thru each element to add it to the sum.
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^2)
+Explanation: The for loop itself is O(n) because it is accessing each array. Inside the loop, it is calling the previous method which itself is O(n). So O(n*n) is O(n^2).
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: O(log n)
+Explanation: This is because it is halving the value n till it reach 1, which it is half the operation of O(n).  
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: The loop is going to go thru the entire array regardless of what happen inside it. 
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,13 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^3)
+Explanation: The first for-loop with the variable i is O(n). 
+
+(I'm ignoring the for-loop with variable j because that is basically O(n^2) which in the grand scheme of thing O(n^2+n^3) doesn't matter much)
+
+The second for-loop with variable k is another O(n).
+
+The third loop(while-loop) with variable m is basically 3/2n which can be simplify to O(n).
+
+So all in all, O(n*n*n) => O(n^3). 
