@@ -11,7 +11,7 @@ creator:
 
 ## Introduction
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+> ***Note:*** _This should be done independently._
 
 In this lab, you will determine the time complexity of various algorithms in terms of their worst-case running times. You will express those running times in Big-O notation.
 
