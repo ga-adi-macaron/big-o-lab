@@ -38,3 +38,9 @@ Modify the pseudocode text file by adding the worse-case running time in Big-O n
 ## Additional Resources
 
 - [Best, Average, and Worst Cases](http://bigocheatsheet.com/)
+
+---
+
+## Licensing
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
