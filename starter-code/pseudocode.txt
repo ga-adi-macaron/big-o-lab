@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: runs through array 1 time
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^2)
+Explanation: algorithm goes through array of arrays 1 time
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: O (log n)
+Explanation: this would be log n because the amount is being halved each iteration
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n)
+Explanation: goes through entire array once
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,5 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: O(n^3)
+Explanation: this has 3 nested loops, the other one would add to the run time but the big o notation would default to the 3 nested loops
